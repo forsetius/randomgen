@@ -11,9 +11,6 @@ logs/*
 node_modules
 jspm_packages
 
-# Serverless directories
-.serverless
-
 # Tests
 .tests
 
@@ -22,8 +19,4 @@ jspm_packages
 
 # ---> Custom
 dist/
-mnt/
-reports
-docker-compose.override.yml
 !.gitkeep
-reports

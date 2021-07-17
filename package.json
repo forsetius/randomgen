@@ -10,6 +10,9 @@
     "lint:fix": "eslint --fix ./src"
   },
   "dependencies": {
+    "class-transformer": "^0.4.0",
+    "class-transformer-validator": "^0.9.1",
+    "class-validator": "^0.13.1",
     "express": "4.17.1",
     "luxon": "1.27.0",
     "pino": "6.11.3",

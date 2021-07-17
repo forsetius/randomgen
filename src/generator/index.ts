@@ -1,1 +1,1 @@
-export { TechnobabbleGenerator } from './technobabble/TechnobabbleGenerator';
+export { TechnobabbleRequestHandler } from './technobabble/TechnobabbleRequestHandler';
