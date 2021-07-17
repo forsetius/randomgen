@@ -1,0 +1,29 @@
+# ---> IDEs
+.vscode/*
+.idea/*
+
+# ---> Node
+# Logs
+logs/*
+*.log
+
+# package directories
+node_modules
+jspm_packages
+
+# Serverless directories
+.serverless
+
+# Tests
+.tests
+
+# Webpack directories
+.webpack
+
+# ---> Custom
+dist/
+mnt/
+reports
+docker-compose.override.yml
+!.gitkeep
+reports
