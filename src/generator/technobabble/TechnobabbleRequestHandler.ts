@@ -1,9 +1,9 @@
-import { DefaultedMap } from "src/util/DefaultedMap";
+import { DefaultedMap } from "../../util/DefaultedMap";
 import { singleton } from "tsyringe";
 import { BaseGenerator } from "../BaseGenerator";
 import { AbstractRequestHandler } from "../RequestHandler"
-import { EnglishTechnobabbleGenerator } from "./generetor/EnglishTechnobabbleGenerator";
-import { PolishTechnobabbleGenerator } from "./generetor/PolishTechnobabbleGenerator";
+import { EnglishTechnobabbleGenerator } from "./generator/EnglishTechnobabbleGenerator";
+import { PolishTechnobabbleGenerator } from "./generator/PolishTechnobabbleGenerator";
 
 @singleton()
 export class TechnobabbleRequestHandler extends AbstractRequestHandler {

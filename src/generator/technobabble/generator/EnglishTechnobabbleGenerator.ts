@@ -1,4 +1,4 @@
-import { RollableCollection } from 'src/util/RollableCollection';
+import { RollableCollection } from '../../../util/RollableCollection';
 import { BaseGenerator } from '../../BaseGenerator';
 
 export class EnglishTechnobabbleGenerator extends BaseGenerator {

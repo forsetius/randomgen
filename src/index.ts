@@ -22,3 +22,5 @@ export function bootstrap(): void {
     logger.info(`Random generator started in ${process.env['NODE_ENV'] ?? 'unknown'} environment at port ${PORT}`);
   });
 }
+
+bootstrap();

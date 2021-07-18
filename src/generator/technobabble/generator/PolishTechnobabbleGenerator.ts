@@ -1,5 +1,5 @@
-import { flipCoin } from 'src/util/random';
-import { RollableCollection } from 'src/util/RollableCollection';
+import { flipCoin } from '../../../util/random';
+import { RollableCollection } from '../../../util/RollableCollection';
 import { BaseGenerator } from '../../BaseGenerator';
 
 export class PolishTechnobabbleGenerator extends BaseGenerator {
@@ -40,7 +40,7 @@ export class PolishTechnobabbleGenerator extends BaseGenerator {
   }
 
   private pickAdjectiveForm(forms: AdjectiveForms, gender: Gender, isPlural: boolean) {
-    return isPlural ? forms.npl : forms[gender];
+    return isPlural ? forms.pl : forms[gender];
   }
 
   private pickNounForm(forms: NounForms, isPlural: boolean) {
@@ -48,6 +48,6 @@ export class PolishTechnobabbleGenerator extends BaseGenerator {
   }
 }
 
-type Gender = 'm' | 'f' | 'n' | 'npl';
+type Gender = 'm' | 'f' | 'n' | 'pl';
 type AdjectiveForms = Record<Gender, string>;
 type NounForms = { gender: Gender, sing: string, pl: string };

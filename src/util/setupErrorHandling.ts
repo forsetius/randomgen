@@ -15,10 +15,8 @@ export function setupErrorHandling() : void {
 
   process
     .on('unhandledRejection', handleFinalError('unhandledRejection'))
-    .on('uncaughtException', handleFinalError('uncaughtException'));
-  // .on('exit', () => {
-  //   database.getConnection()
-  //     .then((c) => c.close())
-  //     .finally(() => logger.info('Report tool exits'));
-  // });
+    .on('uncaughtException', handleFinalError('uncaughtException'))
+    .on('exit', () => {
+      logger.info('Report tool exits');
+    });
 }
