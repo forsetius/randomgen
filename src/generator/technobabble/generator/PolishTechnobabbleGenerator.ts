@@ -29,7 +29,7 @@ export class PolishTechnobabbleGenerator extends BaseGenerator {
 
     const isEffectPlural = flipCoin();
     const isDevicePlural = flipCoin();
-    
+
     return [
       action,
       this.pickAdjectiveForm(descriptor, device.gender, isDevicePlural),

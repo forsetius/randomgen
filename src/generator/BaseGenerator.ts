@@ -7,5 +7,3 @@ export abstract class BaseGenerator {
     return JSON.parse(fs.readFileSync(`${__dirname}/../../dict/${filename}.json`, 'utf-8')) as Record<string, any>;
   }
 }
-
-

@@ -1,20 +1,20 @@
 export class DefaultedMap<K, V> extends Map<K, V> {
-    public constructor(
+  public constructor(
         private readonly defaultKey: K,
         entries: readonly (readonly [K, V])[],
-    ) {
-        super(entries);
+  ) {
+    super(entries);
 
-        if (!this.has(defaultKey)) {
-            throw new Error('Default element not set');
-        }
+    if (!this.has(defaultKey)) {
+      throw new Error('Default element not set');
+    }
+  }
+
+  public get(key: K): V {
+    if (this.has(key)) {
+      return super.get(key) as V;
     }
 
-    public get(key: K): V {
-        if (this.has(key)) {
-            return super.get(key) as V;
-        }
-
-        return super.get(this.defaultKey) as V;
-    }
+    return super.get(this.defaultKey) as V;
+  }
 }

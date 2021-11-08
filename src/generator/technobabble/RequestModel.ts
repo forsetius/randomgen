@@ -1,7 +1,7 @@
-import { IsLocale, IsOptional } from "class-validator";
+import { IsLocale, IsOptional } from 'class-validator';
 
 export class RequestModel {
-    @IsOptional()
-    @IsLocale({ message: '"lang": invalid language code' })
-    lang?: string;
+  @IsOptional()
+  @IsLocale({ message: '"lang": invalid language code' })
+  lang?: string;
 }

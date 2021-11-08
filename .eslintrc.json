@@ -88,10 +88,12 @@
     "import/no-default-export": "error",
     "import/no-unresolved": "off",
     "import/prefer-default-export": "off",
-    "indent": ["error", 2],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
     "new-cap": "off",
     "no-param-reassign": "off",
     "no-use-before-define": "off",
+    "object-curly-newline": ["error", { "multiline": true }],
+    "object-property-newline": ["error"],
     "padding-line-between-statements": [
       "error",
       { "blankLine": "always", "prev": "directive", "next": "*" },
