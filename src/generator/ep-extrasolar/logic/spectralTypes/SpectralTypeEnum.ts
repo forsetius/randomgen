@@ -1,0 +1,17 @@
+export enum SpectralTypeEnum {
+  O = 'spectralType.O',
+  B = 'spectralType.B',
+  A = 'spectralType.A',
+  F = 'spectralType.F',
+  G = 'spectralType.G',
+  K = 'spectralType.K',
+  M = 'spectralType.M',
+  L = 'spectralType.L',
+  T = 'spectralType.T',
+  Y = 'spectralType.Y',
+  C = 'spectralType.C',
+  S = 'spectralType.S',
+  D = 'spectralType.D',
+  X = 'spectralType.X',
+  Exotic = 'spectralType.Exotic',
+}
